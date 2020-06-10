@@ -1,0 +1,21 @@
+
+public class rebajas {
+	private static void descubrePorcentaje(String nombreProducto) {
+		// TODO Auto-generated method stub
+		String nombreProducto = ropa;
+		if(nombreProducto = ropa) {
+			String nombre = "ropa";
+			double precioNoRebajado = 18;
+			double precioRebajado = 14.4;
+			String porcentaje = "20%";
+		}
+	}
+	public static void main(String[] args) {
+		String descubrePorcentaje;
+		descubrePorcentaje("ropa");
+		System.out.println("articulo es " + ropa + " Precio no rebajado " + precioNoRebajado + " Precio rebajado " + precioRebajado + " Procentaje " + porcentaje );
+	}
+
+
+	
+}

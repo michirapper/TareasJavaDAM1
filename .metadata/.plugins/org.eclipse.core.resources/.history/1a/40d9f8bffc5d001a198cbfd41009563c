@@ -1,0 +1,48 @@
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import java.awt.Font;
+import javax.swing.JTextField;
+import javax.swing.JButton;
+
+public class test extends JFrame {
+	private JLabel lblNombre;
+	private JTextField txtNombre;
+	private JButton btnOK;
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		test window = new test();
+		
+	}
+
+	/**
+	 * Create the application.
+	 */
+	public test() {
+		setTitle("Nombre Ventana");
+		setBounds(100, 100, 890, 516);
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		getContentPane().setLayout(null);
+		
+		lblNombre = new JLabel("Nombre:");
+		lblNombre.setFont(new Font("Tahoma", Font.PLAIN, 20));
+		lblNombre.setBounds(10, 20, 85, 25);
+		getContentPane().add(lblNombre);
+		
+		txtNombre = new JTextField();
+		txtNombre.setBounds(90, 19, 174, 26);
+		getContentPane().add(txtNombre);
+		txtNombre.setColumns(10);
+		
+		btnOK = new JButton("OK");
+		btnOK.setFont(new Font("Tahoma", Font.PLAIN, 17));
+		btnOK.setActionCommand("New Button");
+		btnOK.setBounds(301, 26, 85, 21);
+		getContentPane().add(btnOK);
+		setVisible(true);
+	}
+}

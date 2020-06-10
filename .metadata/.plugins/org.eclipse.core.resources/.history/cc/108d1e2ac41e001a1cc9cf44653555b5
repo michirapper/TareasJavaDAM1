@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+public class Ejercico4 {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		String str1 = sc.nextLine();
+		String[] partes1 = str1.split(" ");
+		for (int i = 0; i < partes1.length; i++) {
+			if(partes1[0].charAt(0) && partes1[0].charAt(1) )
+			
+			
+			System.out.println(partes1[0].charAt(0));
+			
+		}
+	}
+}

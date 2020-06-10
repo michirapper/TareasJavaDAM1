@@ -1,0 +1,51 @@
+
+public class Controlador {
+	private Modelo miModelo;
+	private Login miLogin;
+	private pantallaPrincipalPlantilla miPantallaPrincipal;
+	private Registro miRegistro;
+	private cambioContraseña miCambioContraseña;
+	
+	public void setpantallaPrincipal(pantallaPrincipalPlantilla miPantallaPrincipal) {
+		this.miPantallaPrincipal = miPantallaPrincipal;
+	}
+	public void setRegistro(Registro miRegistro) {
+		this.miRegistro = miRegistro;
+	}
+	public void setCambioContrasena(cambioContraseña miCambioContraseña) {
+		this.miCambioContraseña = miCambioContraseña;
+	}
+	public void setModelo(Modelo miModelo) {
+		this.miModelo = miModelo;
+	}
+	public void setLogin(Login miLogin) {
+		this.miLogin = miLogin;
+	}
+	public void login() {
+		String usr = miLogin.getUsr();
+		String pwd = miLogin.getPwd();
+		miModelo.login(usr,pwd);
+		
+	}
+	public void registro() {
+		miLogin.setVisible(false);
+		miRegistro.setVisible(true);
+	}
+	public void pantallaPrincipal() {
+		miLogin.setVisible(false);
+		miPantallaPrincipal.setVisible(true);
+	}
+	public void goLoginRegistro() {
+		miRegistro.setVisible(false);	
+		miLogin.setVisible(true);
+	}
+	public void cambiarContrasena() {
+		miLogin.setVisible(false);
+		miCambioContraseña.setVisible(true);		
+	}
+	public void goLoginCambioContrasena() {
+		miCambioContraseña.setVisible(false);	
+		miLogin.setVisible(true);
+	}
+	
+}

@@ -1,0 +1,7 @@
+
+public class AceptaelReto371 {
+	public static void main(String[] args) {
+		int entrada = 3;
+		
+	}
+}

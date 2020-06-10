@@ -1,0 +1,21 @@
+import java.util.ArrayList;
+
+public class ArrayList3 {
+
+	public static void main(String[] args) {
+		ArrayList<String> miColeccion = new ArrayList<String>();
+		miColeccion.add("Collection");
+		miColeccion.add("List");
+		miColeccion.add("Set");
+		miColeccion.add("SortedSet");
+		miColeccion.add("Map");
+		
+		
+		// Por tu código aquí
+		// Para imprimir la lista tras el cambio
+		for (String elto : miColeccion) {
+			System.out.println(elto);
+		}
+
+	}
+}

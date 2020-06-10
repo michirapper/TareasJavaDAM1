@@ -1,0 +1,54 @@
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.JTable;
+import javax.swing.table.DefaultTableModel;
+import javax.swing.ListSelectionModel;
+
+public class Fromulario extends JFrame {
+	private JTable table;
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		Fromulario window = new Fromulario();
+	}
+
+	/**
+	 * Create the application.
+	 */
+	public Fromulario() {
+		setBounds(100, 100, 994, 504);
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		getContentPane().setLayout(null);
+		
+		JPanel panel = new JPanel();
+		panel.setBounds(23, 46, 934, 159);
+		getContentPane().add(panel);
+		panel.setLayout(null);
+		
+		table = new JTable();
+		table.setModel(new DefaultTableModel(
+			new Object[][] {
+				{"Nombre", "Apellido", null},
+				{null, null, null},
+				{null, null, null},
+				{null, null, null},
+				{null, null, null},
+				{null, null, null},
+				{null, null, null},
+				{null, null, null},
+				{null, null, null},
+				{null, null, null},
+			},
+			new String[] {
+				"New column", "New column", "New column"
+			}
+		));
+		table.setBounds(0, 0, 934, 159);
+		panel.add(table);
+		setVisible(true);
+	}
+}

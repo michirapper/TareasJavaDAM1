@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class Ejercicio4 {
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		double numero = in.nextDouble();
+		int exponente = in.nextInt();
+		for(int i = 0; i > exponente; i++) {
+			double valor = numero * i
+		}
+		
+		
+//		int exponente = in.nextInt();
+//		System.out.println(Math.pow(numero,exponente));
+
+	}
+}

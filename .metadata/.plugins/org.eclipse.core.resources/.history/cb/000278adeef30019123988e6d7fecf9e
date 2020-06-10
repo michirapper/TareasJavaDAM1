@@ -1,0 +1,14 @@
+
+public class rebajas {
+	String descubrePorcentaje;
+	public static void descubrePorcentaje(String nombreProducto) {
+		String ropa = nombreProducto;
+		if(nombreProducto = ropa) {
+			String nombre = ropa;
+			double precioNoRebajado = 18;
+			double precioRebajado = 14.4;
+			String porcentaje = "20%";
+		}
+		System.out.println("articulo es " + ropa + " Precio no rebajado " + precioNoRebajado + " Precio rebajado " + precioRebajado + " Procentaje " + porcentaje );
+	}
+}

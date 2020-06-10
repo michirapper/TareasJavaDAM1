@@ -1,0 +1,17 @@
+
+public class temperatura {
+	double celsisusToFarenheit;
+	double farenheitToCelsius;
+	
+	public void setEdad(double celsisusToFarenheit) {
+		edad = y;
+	}
+	static double F = 1.8 + 32;
+	static double C =(F-32)/1.8;
+	public static void main(String[] args) {
+		System.out.println("1,8 grados Farenheit son " + F +  " ");
+		System.out.println("1,8 grados Celsius son " + C);
+
+	}
+
+}

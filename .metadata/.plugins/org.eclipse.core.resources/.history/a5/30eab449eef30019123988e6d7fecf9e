@@ -1,0 +1,9 @@
+
+public class rebajas {
+	String descubrePorcentaje;
+	public static void descubrePorcentaje(string nombreProducto) {
+		double grado = celsisusToFarenheit;
+		double F = 1.8 * grado +32;
+		System.out.println(F);
+	}
+}

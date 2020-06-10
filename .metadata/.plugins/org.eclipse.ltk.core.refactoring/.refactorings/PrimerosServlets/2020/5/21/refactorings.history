@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;RegistroUsuarios.java&apos; to &apos;MiguelAngelGarreWEB/src/golosinas&apos;&#x0D;&#x0A;- Original project: &apos;PrimerosServlets&apos;&#x0D;&#x0A;- Destination element: &apos;MiguelAngelGarreWEB/src/golosinas&apos;&#x0D;&#x0A;- Original element: &apos;es.miguelangelgarre.servletpruebas.RegistroUsuarios.java&apos;" description="Copy compilation unit" destination="=MiguelAngelGarreWEB/src&lt;golosinas" element1="/src&lt;es.miguelangelgarre.servletpruebas{RegistroUsuarios.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1589730657581" units="1" version="1.0"/>
+</session>

@@ -1,0 +1,35 @@
+
+public class rebajas {
+	String nombre;
+	 static double precioNoRebajado ;
+	 static double precioRebajado;
+	 static String porcentaje;
+	 public String ropa;
+	
+	public static void descubrePorcentaje(String nombreProducto) {
+		// TODO Auto-generated method stub
+		
+		
+		if (nombreProducto == "ropa") {
+			String nombre = "ropa";
+			double precioNoRebajado = 18;
+			double precioRebajado = 14.4;
+			String porcentaje = "20%";
+			System.out.println("articulo es " + ropa + " Precio no rebajado " + precioNoRebajado + " Precio rebajado " + precioRebajado + " Procentaje " + porcentaje);
+		}
+		else if(nombreProducto == "culo"){
+			String nombre = "culo";
+			double precioNoRebajado = 38;
+			double precioRebajado = 14.456534;
+			String porcentaje = "30%";
+			System.out.println("articulo es " + ropa + " Precio no rebajado " + precioNoRebajado + " Precio rebajado " + precioRebajado + " Procentaje " + porcentaje);
+		}
+		
+	}
+
+	public static void main(String[] args) {
+		descubrePorcentaje("culo");
+		
+	}
+
+}

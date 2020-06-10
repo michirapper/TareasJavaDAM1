@@ -1,0 +1,19 @@
+1582110815255	Extract constant 'EUROS_PESETAS_CHANGE_RATE'
+1582111049047	Encapsulate field 'name'
+1582111057629	Encapsulate field 'id'
+1582111309176	Rename type 'refactor2'
+1582111615018	Extract method 'removeSpecialChars'
+1582111643705	Extract method 'replaceSpaces'
+1582111674984	Extract method 'trimSpaces'
+1582112134358	Extract local variable 'isWorkingAge'
+1582112153651	Extract local variable 'isLowSalary'
+1582112183045	Extract local variable 'isLittleAmount'
+1582195072520	Extract Class...
+1582195123640	Delete element
+1582195275175	Extract Class...
+1582195354174	Delete element
+1582195449367	Extract Class...
+1582196066882	Pull up 'plate' to 'Vehicle'
+1582196088980	Pull up 'start()' to 'Vehicle'
+1582196178852	Pull up 'start()' to 'Vehicle'
+1582196515362	Push down

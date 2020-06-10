@@ -1,0 +1,10 @@
+
+public class Ejercicio1 {
+	public static void main(String[] args) {
+		int contadorMayusculas = 0;
+		int contadorMinusculas = 0;
+
+		System.out.println("Hay " + contadorMayusculas + " mayusculas");
+		System.out.println("Hay " + contadorMinusculas + " minusculas");
+	}
+}

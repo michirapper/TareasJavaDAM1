@@ -1,0 +1,9 @@
+
+public class Ejercicio3 {
+public static void main(String[] args) {
+	int value = 100;
+	for (int i = 200; i >= value; i++) {
+		 System.out.println(i);
+	}
+}
+}

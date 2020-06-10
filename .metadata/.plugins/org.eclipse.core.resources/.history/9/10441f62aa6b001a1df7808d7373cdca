@@ -1,0 +1,123 @@
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JTextPane;
+import javax.swing.JTextField;
+import javax.swing.JLabel;
+import com.jgoodies.forms.factories.DefaultComponentFactory;
+import java.awt.Font;
+import java.awt.TextField;
+import java.awt.Button;
+import javax.swing.JRadioButton;
+import javax.swing.ButtonGroup;
+import javax.swing.JCheckBox;
+
+public class Registro extends JFrame{
+
+	private JFrame frame;
+	private JTextField txtNombre;
+	private JTextField txtApellidos;
+	private JTextField txtEmail;
+	private JTextField txtDni;
+	private JTextField txtContrasena;
+	private JTextField txtConfirmarContrasena;
+	private final ButtonGroup buttonGroup = new ButtonGroup();
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+					Registro window = new Registro();
+					window.frame.setVisible(true);
+	}
+	public Registro() {
+		new JFrame();
+		frame.setBounds(100, 100, 488, 549);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.getContentPane().setLayout(null);
+		
+		txtNombre = new JTextField();
+		txtNombre.setBounds(10, 36, 205, 20);
+		frame.getContentPane().add(txtNombre);
+		txtNombre.setColumns(10);
+		
+		JLabel lblNombre = DefaultComponentFactory.getInstance().createLabel("Nombre");
+		lblNombre.setFont(new Font("Tahoma", Font.PLAIN, 13));
+		lblNombre.setBounds(10, 11, 112, 25);
+		frame.getContentPane().add(lblNombre);
+		
+		JLabel lblApellidos = DefaultComponentFactory.getInstance().createLabel("Apellidos");
+		lblApellidos.setFont(new Font("Tahoma", Font.PLAIN, 13));
+		lblApellidos.setBounds(10, 67, 95, 14);
+		frame.getContentPane().add(lblApellidos);
+		
+		txtApellidos = new JTextField();
+		txtApellidos.setBounds(10, 92, 205, 20);
+		frame.getContentPane().add(txtApellidos);
+		txtApellidos.setColumns(10);
+		
+		JLabel lblEmail = DefaultComponentFactory.getInstance().createLabel("Email");
+		lblEmail.setFont(new Font("Tahoma", Font.PLAIN, 13));
+		lblEmail.setBounds(10, 173, 112, 14);
+		frame.getContentPane().add(lblEmail);
+		
+		txtEmail = new JTextField();
+		txtEmail.setBounds(10, 198, 205, 20);
+		frame.getContentPane().add(txtEmail);
+		txtEmail.setColumns(10);
+		
+		JLabel lblDNI = DefaultComponentFactory.getInstance().createLabel("DNI");
+		lblDNI.setFont(new Font("Tahoma", Font.PLAIN, 13));
+		lblDNI.setBounds(11, 123, 95, 14);
+		frame.getContentPane().add(lblDNI);
+		
+		txtDni = new JTextField();
+		txtDni.setBounds(10, 142, 205, 20);
+		frame.getContentPane().add(txtDni);
+		txtDni.setColumns(10);
+		
+		JLabel lblContraseña = DefaultComponentFactory.getInstance().createLabel("Contrase\u00F1a");
+		lblContraseña.setFont(new Font("Tahoma", Font.PLAIN, 13));
+		lblContraseña.setBounds(15, 224, 95, 14);
+		frame.getContentPane().add(lblContraseña);
+		
+		txtContrasena = new JTextField();
+		txtContrasena.setBounds(14, 248, 205, 20);
+		frame.getContentPane().add(txtContrasena);
+		txtContrasena.setColumns(10);
+		
+		JLabel lblConfirmarContraseña = DefaultComponentFactory.getInstance().createLabel("Confirmar Contrase\u00F1a");
+		lblConfirmarContraseña.setFont(new Font("Tahoma", Font.PLAIN, 13));
+		lblConfirmarContraseña.setBounds(15, 280, 132, 14);
+		frame.getContentPane().add(lblConfirmarContraseña);
+		
+		txtConfirmarContrasena = new JTextField();
+		txtConfirmarContrasena.setBounds(14, 304, 205, 20);
+		frame.getContentPane().add(txtConfirmarContrasena);
+		txtConfirmarContrasena.setColumns(10);
+		
+		Button btnConfirmar = new Button("Confirmar");
+		btnConfirmar.setBounds(271, 397, 83, 25);
+		frame.getContentPane().add(btnConfirmar);
+		
+		Button btnCancelar = new Button("Cancelar");
+		btnCancelar.setBounds(25, 397, 76, 25);
+		frame.getContentPane().add(btnCancelar);
+		
+		JRadioButton rdbtnAlumnos = new JRadioButton("Alumnos");
+		buttonGroup.add(rdbtnAlumnos);
+		rdbtnAlumnos.setFont(new Font("Tahoma", Font.PLAIN, 17));
+		rdbtnAlumnos.setBounds(312, 167, 109, 23);
+		frame.getContentPane().add(rdbtnAlumnos);
+		
+		JRadioButton rdbtnProfesores = new JRadioButton("Profesores");
+		buttonGroup.add(rdbtnProfesores);
+		rdbtnProfesores.setFont(new Font("Tahoma", Font.PLAIN, 17));
+		rdbtnProfesores.setBounds(312, 244, 109, 23);
+		frame.getContentPane().add(rdbtnProfesores);
+		
+		JCheckBox chckbxAceptoLosTerminos = new JCheckBox("Acepto los terminos y condiciones del programa");
+		chckbxAceptoLosTerminos.setBounds(10, 353, 456, 23);
+		frame.getContentPane().add(chckbxAceptoLosTerminos);
+	}
+}

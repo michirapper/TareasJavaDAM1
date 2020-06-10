@@ -1,0 +1,67 @@
+import java.awt.BorderLayout;
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.border.EmptyBorder;
+import javax.swing.JLabel;
+import java.awt.Font;
+import java.awt.Color;
+import javax.swing.JButton;
+import javax.swing.JCheckBox;
+import javax.swing.JTextField;
+
+public class Registro extends JFrame {
+
+	private JPanel contentPane;
+	private JTextField txtNombre;
+	private JTextField txtApellidos;
+
+	public static void main(String[] args) {
+
+		Bienvenida frame = new Bienvenida();
+		frame.setVisible(true);
+
+	}
+	public Registro() {
+		setTitle("Registro");
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 380, 559);
+		contentPane = new JPanel();
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+		setContentPane(contentPane);
+		contentPane.setLayout(null);
+		
+		JButton btnAceptar = new JButton("Aceptar");
+		btnAceptar.setBounds(34, 436, 89, 23);
+		contentPane.add(btnAceptar);
+		
+		JButton btnCancelar = new JButton("Cancelar");
+		btnCancelar.setBounds(227, 436, 89, 23);
+		contentPane.add(btnCancelar);
+		
+		JCheckBox chckbxAceptaLosTerminos = new JCheckBox("Acepta los terminos y condiciones del usuario");
+		chckbxAceptaLosTerminos.setBounds(34, 385, 282, 23);
+		contentPane.add(chckbxAceptaLosTerminos);
+		
+		JLabel lblNombre = new JLabel("Nombre:");
+		lblNombre.setFont(new Font("Tahoma", Font.PLAIN, 15));
+		lblNombre.setBounds(10, 23, 76, 14);
+		contentPane.add(lblNombre);
+		
+		txtNombre = new JTextField();
+		txtNombre.setBounds(10, 40, 188, 20);
+		contentPane.add(txtNombre);
+		txtNombre.setColumns(10);
+		
+		txtApellidos = new JTextField();
+		txtApellidos.setColumns(10);
+		txtApellidos.setBounds(10, 88, 188, 20);
+		contentPane.add(txtApellidos);
+		
+		JLabel lblApellidos = new JLabel("Apellidos");
+		lblApellidos.setFont(new Font("Tahoma", Font.PLAIN, 15));
+		lblApellidos.setBounds(10, 71, 76, 14);
+		contentPane.add(lblApellidos);
+	}
+}

@@ -1,0 +1,12 @@
+package pullup.refactored;
+
+/**
+* Refactored version
+*/
+public class Vehicle {
+	protected String name;
+	private String plate;
+
+	public void start() {
+	}
+}

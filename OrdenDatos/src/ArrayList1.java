@@ -1,0 +1,21 @@
+import java.util.ArrayList;
+
+public class ArrayList1 {
+
+	public static void main(String[] args) {
+		ArrayList<String> miColeccion = new ArrayList<String>();
+		miColeccion.add("Collection");
+		miColeccion.add("List");
+		miColeccion.add("Set");
+		miColeccion.add("SortedSet");
+		miColeccion.add("Map");
+
+		for (String elto : miColeccion) {
+			System.out.println(elto);
+		}
+//		for (int i = 0; i < miColeccion.size(); i++) {
+//			String elto = miColeccion.get(i);
+//			System.out.println(elto);
+//		}
+	}
+}

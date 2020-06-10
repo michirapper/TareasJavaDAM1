@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+public class Ejercico4 {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		String str1 = sc.nextLine();
+		String[] partes1 = str1.split(" ");
+		int si = 0;
+		int no = 0;
+		if (partes1.length >= 2) {
+			for (int i = 0; i < partes1.length ; i++) {
+				System.out.println(partes1[i]);
+				if ((partes1[i].charAt(partes1.length - 1) == partes1[i + 1].charAt(1))
+						&& (partes1[i].charAt(partes1.length - 2) == partes1[i + 1].charAt(0))) {
+					si++;
+				} else if ((partes1[i].charAt(partes1.length - 1) != partes1[i + 1].charAt(1))
+						|| (partes1[i].charAt(partes1.length - 2) != partes1[i + 1].charAt(0))) {
+					no++;
+				}
+				System.out.println(partes1[i]);
+			}
+			if (no > 0) {
+				System.out.println("NO");
+			} else {
+				System.out.println("SI");
+			}
+		} else {
+			System.out.println("SI");
+		}
+	}
+}

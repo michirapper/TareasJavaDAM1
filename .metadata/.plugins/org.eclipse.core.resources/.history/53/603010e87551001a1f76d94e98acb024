@@ -1,0 +1,13 @@
+package michirapper.Ejercicio2;
+
+public class Asalariado {
+	private String nombre;
+	private long dni;
+	private int diasVacaciones;
+	public Asalariado(String nombre, long dni, int diasVacaciones) {
+		this.nombre = nombre;
+		this.dni = dni;
+		this.diasVacaciones = diasVacaciones;
+	}
+	
+}

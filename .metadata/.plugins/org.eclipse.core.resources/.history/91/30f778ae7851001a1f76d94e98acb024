@@ -1,0 +1,9 @@
+package michirapper.Ejercicio2;
+
+public class test {
+	public static void main(String[] args) {
+		EmpleadoDistribucion manuel = new EmpleadoDistribucion("Manolito", 1254234564L, 8, "Manana");
+		EmpleadoProduccion sepedo = new EmpleadoProduccion("Sepenuel", 15544565L, 10, "Tarde");
+		System.out.println(manuel);
+	}
+}

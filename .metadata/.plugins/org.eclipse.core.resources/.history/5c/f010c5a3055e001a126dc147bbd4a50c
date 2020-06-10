@@ -1,0 +1,95 @@
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import java.awt.Font;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JTextField;
+import javax.swing.JButton;
+import javax.swing.JScrollPane;
+import javax.swing.JTextArea;
+import javax.swing.JComboBox;
+import javax.swing.DefaultComboBoxModel;
+import javax.swing.JCheckBox;
+import java.awt.event.ItemListener;
+import java.awt.event.ItemEvent;
+
+public class test extends JFrame {
+	private JLabel lblNombre;
+	private JTextField txtNombre;
+	private JButton btnOK;
+	private JComboBox comboBox;
+	private JCheckBox chckbxPregunta;
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		test window = new test();
+
+	}
+
+	/**
+	 * Create the application.
+	 */
+	public test() {
+		setTitle("Nombre Ventana");
+		setBounds(100, 100, 890, 516);
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		getContentPane().setLayout(null);
+
+		lblNombre = new JLabel("Nombre:");
+		lblNombre.setFont(new Font("Tahoma", Font.PLAIN, 20));
+		lblNombre.setBounds(10, 20, 85, 25);
+		getContentPane().add(lblNombre);
+
+		txtNombre = new JTextField();
+		txtNombre.setBounds(90, 19, 174, 26);
+		getContentPane().add(txtNombre);
+		txtNombre.setColumns(10);
+
+		btnOK = new JButton("OK");
+		btnOK.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				comboBox.addItem(txtNombre.getText() );
+				if(chckbxPregunta.isSelected()) {
+					System.out.println("True");
+				}else {
+					System.out.println("False");
+				}
+			}
+		});
+		btnOK.setFont(new Font("Tahoma", Font.PLAIN, 17));
+		btnOK.setActionCommand("New Button");
+		btnOK.setBounds(274, 20, 114, 28);
+		getContentPane().add(btnOK);
+		
+		JScrollPane scrollPane = new JScrollPane();
+		scrollPane.setBounds(20, 58, 368, 217);
+		getContentPane().add(scrollPane);
+		
+		JTextArea textArea = new JTextArea();
+		scrollPane.setViewportView(textArea);
+		
+		comboBox = new JComboBox();
+		comboBox.addItemListener(new ItemListener() {
+			public void itemStateChanged(ItemEvent e) {
+				System.out.println("Ha cambiado");
+			}
+		});
+		comboBox.setFont(new Font("Tahoma", Font.PLAIN, 18));
+		comboBox.setBounds(398, 58, 79, 28);
+		getContentPane().add(comboBox);
+		comboBox.setModel(new DefaultComboBoxModel(new String[] {"0", "1", "2", "3", "4", "5", "6"}));
+		
+		chckbxPregunta = new JCheckBox("Pregunta");
+		chckbxPregunta.setFont(new Font("Tahoma", Font.PLAIN, 20));
+		chckbxPregunta.setBounds(408, 108, 174, 21);
+		getContentPane().add(chckbxPregunta);
+		
+		setVisible(true);
+		
+	}
+}

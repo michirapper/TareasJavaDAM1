@@ -1,0 +1,9 @@
+
+public class Ejercicio3 {
+   public static void main(String[] args) {
+	   String sCadena = "LineaDeCodigo";
+	   for (int x=sCadena.length()-1;x>=0;x--) {
+			sCadenaInvertida = sCadenaInvertida + sCadena.charAt(x);
+	   }
+}
+}

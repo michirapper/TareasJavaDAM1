@@ -1,0 +1,6 @@
+
+public class temperatura {
+	double celsisusToFarenheit;
+	double farenheitToCelsius;
+
+}

@@ -1,0 +1,122 @@
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JTextPane;
+import javax.swing.JTextField;
+import javax.swing.JLabel;
+import com.jgoodies.forms.factories.DefaultComponentFactory;
+import java.awt.Font;
+import java.awt.TextField;
+import java.awt.Button;
+
+public class Registro {
+
+	private JFrame frame;
+	private JTextField textField;
+	private JTextField textField_1;
+	private JTextField textField_2;
+	private JTextField textField_3;
+	private JTextField textField_4;
+	private JTextField textField_5;
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					Registro window = new Registro();
+					window.frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the application.
+	 */
+	public Registro() {
+		initialize();
+	}
+
+	/**
+	 * Initialize the contents of the frame.
+	 */
+	private void initialize() {
+		frame = new JFrame();
+		frame.setBounds(100, 100, 450, 300);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.getContentPane().setLayout(null);
+		
+		textField = new JTextField();
+		textField.setBounds(10, 36, 112, 20);
+		frame.getContentPane().add(textField);
+		textField.setColumns(10);
+		
+		JLabel lblNombre = DefaultComponentFactory.getInstance().createLabel("Nombre");
+		lblNombre.setFont(new Font("Tahoma", Font.PLAIN, 13));
+		lblNombre.setBounds(10, 11, 112, 25);
+		frame.getContentPane().add(lblNombre);
+		
+		JLabel lblApellidos = DefaultComponentFactory.getInstance().createLabel("Apellidos");
+		lblApellidos.setFont(new Font("Tahoma", Font.PLAIN, 13));
+		lblApellidos.setBounds(10, 67, 95, 14);
+		frame.getContentPane().add(lblApellidos);
+		
+		textField_1 = new JTextField();
+		textField_1.setBounds(10, 92, 112, 20);
+		frame.getContentPane().add(textField_1);
+		textField_1.setColumns(10);
+		
+		JLabel lblCorreo = DefaultComponentFactory.getInstance().createLabel("Direccion de correo");
+		lblCorreo.setFont(new Font("Tahoma", Font.PLAIN, 13));
+		lblCorreo.setBounds(10, 123, 112, 14);
+		frame.getContentPane().add(lblCorreo);
+		
+		textField_2 = new JTextField();
+		textField_2.setBounds(10, 148, 112, 20);
+		frame.getContentPane().add(textField_2);
+		textField_2.setColumns(10);
+		
+		JLabel lblDNI = DefaultComponentFactory.getInstance().createLabel("DNI");
+		lblDNI.setFont(new Font("Tahoma", Font.PLAIN, 13));
+		lblDNI.setBounds(302, 17, 95, 14);
+		frame.getContentPane().add(lblDNI);
+		
+		textField_3 = new JTextField();
+		textField_3.setBounds(301, 36, 112, 20);
+		frame.getContentPane().add(textField_3);
+		textField_3.setColumns(10);
+		
+		JLabel lblContraseña = DefaultComponentFactory.getInstance().createLabel("Contrase\u00F1a");
+		lblContraseña.setFont(new Font("Tahoma", Font.PLAIN, 13));
+		lblContraseña.setBounds(302, 68, 95, 14);
+		frame.getContentPane().add(lblContraseña);
+		
+		textField_4 = new JTextField();
+		textField_4.setBounds(301, 92, 112, 20);
+		frame.getContentPane().add(textField_4);
+		textField_4.setColumns(10);
+		
+		JLabel lblConfirmarContraseña = DefaultComponentFactory.getInstance().createLabel("Confirmar Contrase\u00F1a");
+		lblConfirmarContraseña.setFont(new Font("Tahoma", Font.PLAIN, 13));
+		lblConfirmarContraseña.setBounds(302, 124, 132, 14);
+		frame.getContentPane().add(lblConfirmarContraseña);
+		
+		textField_5 = new JTextField();
+		textField_5.setBounds(301, 148, 112, 20);
+		frame.getContentPane().add(textField_5);
+		textField_5.setColumns(10);
+		
+		Button btnConfirmar = new Button("Confirmar");
+		btnConfirmar.setBounds(225, 226, 83, 25);
+		frame.getContentPane().add(btnConfirmar);
+		
+		Button btnCancelar = new Button("Cancelar");
+		btnCancelar.setBounds(121, 226, 76, 25);
+		frame.getContentPane().add(btnCancelar);
+	}
+}

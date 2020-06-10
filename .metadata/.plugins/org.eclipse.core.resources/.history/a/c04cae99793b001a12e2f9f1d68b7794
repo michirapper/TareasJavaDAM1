@@ -1,0 +1,17 @@
+import java.util.LinkedList;
+import java.util.Random;
+
+public class PilasAleatorio {
+	public static void main(String[] args) {
+		int max = 999;
+		int min = 0;
+		Random rand = new Random();
+		int randomNum;
+		int numeroNumeros = rand.nextInt((max - min) + 1) + min;
+		for (int i = 0; i < numeroNumeros; i++) {
+			randomNum = rand.nextInt((max - min) + 1) + min;
+			System.out.println(randomNum);
+		}
+		Queue<Integer> Q = new LinkedList<Integer>();
+	}
+}

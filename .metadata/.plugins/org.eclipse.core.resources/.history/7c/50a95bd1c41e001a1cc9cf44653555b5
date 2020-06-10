@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class Ejercico4 {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		String str1 = sc.nextLine();
+		String[] partes1 = str1.split(" ");
+		for (int i = 0; i < partes1.length; i++) {
+			char q = partes1[i].charAt(0);
+			if(partes1[i].charAt(0) == partes1[i].charAt(0)) {
+				System.out.println("SI");
+			}else if(partes1[i].charAt(0) == partes1[i].charAt(0)) {
+				System.out.println("NO");
+			}else {
+				SI
+			}
+			
+		}
+	}
+}

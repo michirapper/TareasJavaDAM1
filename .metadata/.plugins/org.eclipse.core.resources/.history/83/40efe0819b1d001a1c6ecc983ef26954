@@ -1,0 +1,8 @@
+
+public class Ejercicio3 {
+	public static void main(String[] args) {
+		String cadena = "abuelita, abuelita";
+		StringBuilder builder = new StringBuilder(cadena);
+		String sCadenaInvertida = builder.reverse().toString();
+	}
+}

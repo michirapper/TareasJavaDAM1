@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 5 elements to &apos;AplicaciónSwingPI/src&apos;&#x0D;&#x0A;- Original project: &apos;LoginMVC&apos;&#x0D;&#x0A;- Destination element: &apos;AplicaciónSwingPI/src&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     Modelo.java&#x0D;&#x0A;     Vista.java&#x0D;&#x0A;     Bienvenida.java&#x0D;&#x0A;     Controlador.java&#x0D;&#x0A;     Main.java" description="Copy compilation units" destination="=AplicaciónSwingPI/src" element1="/src&lt;{Modelo.java" element2="/src&lt;{Vista.java" element3="/src&lt;{Bienvenida.java" element4="/src&lt;{Controlador.java" element5="/src&lt;{Main.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1584809534655" units="5" version="1.0"/>
+</session>

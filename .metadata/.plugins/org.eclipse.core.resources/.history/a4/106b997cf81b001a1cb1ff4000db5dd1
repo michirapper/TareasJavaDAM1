@@ -1,0 +1,25 @@
+import java.util.ArrayList;
+import java.util.Collections;
+
+public class ArrayList4 {
+
+	public static void main(String[] args) {
+		ArrayList<String> miColeccion = new ArrayList<String>();
+		miColeccion.add("Collection");
+		miColeccion.add("List");
+		miColeccion.add("Set");
+		miColeccion.add("SortedSet");
+		miColeccion.add("Map");
+		
+		Collections.rotate(miColeccion,1 );
+		
+		
+		// Para imprimir la lista tras la rotación, recuerda las operaciones remove y
+		// add
+		// El resultado debería ser: List, Set, SortedSet, Map y Collection
+		for (String elto : miColeccion) {
+			System.out.println(elto);
+
+		}
+	}
+}

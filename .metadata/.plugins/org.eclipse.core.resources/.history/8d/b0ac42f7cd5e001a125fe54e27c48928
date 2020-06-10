@@ -1,0 +1,170 @@
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import java.awt.Font;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JTextField;
+import javax.swing.JButton;
+import javax.swing.JScrollPane;
+import javax.swing.JTextArea;
+import javax.swing.JComboBox;
+import javax.swing.DefaultComboBoxModel;
+import javax.swing.JCheckBox;
+import java.awt.event.ItemListener;
+import java.awt.event.ItemEvent;
+import javax.swing.JRadioButton;
+import javax.swing.ButtonGroup;
+import javax.swing.JPasswordField;
+import javax.swing.JSpinner;
+import javax.swing.SpinnerNumberModel;
+import javax.swing.JList;
+import javax.swing.AbstractListModel;
+import javax.swing.SpinnerListModel;
+
+public class test extends JFrame {
+	private JLabel lblNombre;
+	private JTextField txtNombre;
+	private JButton btnOK;
+	private JComboBox comboBox;
+	private JCheckBox chckbxPregunta;
+	private final ButtonGroup buttonGroup = new ButtonGroup();
+	private JPasswordField passwordField;
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		test window = new test();
+
+	}
+
+	/**
+	 * Create the application.
+	 */
+	public test() {
+		setTitle("Nombre Ventana");
+		setBounds(100, 100, 890, 516);
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		getContentPane().setLayout(null);
+
+		lblNombre = new JLabel("Nombre:");
+		lblNombre.setFont(new Font("Tahoma", Font.PLAIN, 20));
+		lblNombre.setBounds(10, 20, 85, 25);
+		getContentPane().add(lblNombre);
+
+		txtNombre = new JTextField();
+		txtNombre.setBounds(90, 19, 174, 26);
+		getContentPane().add(txtNombre);
+		txtNombre.setColumns(10);
+
+		btnOK = new JButton("OK");
+		btnOK.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				comboBox.addItem(txtNombre.getText());
+				if (chckbxPregunta.isSelected()) {
+					System.out.println("True");
+				} else {
+					System.out.println("False");
+				}
+				System.out.println(passwordField.getPassword());
+			}
+		});
+		btnOK.setFont(new Font("Tahoma", Font.PLAIN, 17));
+		btnOK.setActionCommand("New Button");
+		btnOK.setBounds(623, 19, 114, 28);
+		getContentPane().add(btnOK);
+
+		JScrollPane scrollPane = new JScrollPane();
+		scrollPane.setBounds(20, 58, 368, 217);
+		getContentPane().add(scrollPane);
+
+		JTextArea textArea = new JTextArea();
+		scrollPane.setViewportView(textArea);
+
+		comboBox = new JComboBox();
+		comboBox.setFont(new Font("Tahoma", Font.PLAIN, 18));
+		comboBox.setBounds(398, 58, 79, 28);
+		getContentPane().add(comboBox);
+		comboBox.setModel(new DefaultComboBoxModel(new String[] { "0", "1", "2", "3", "4", "5", "6" }));
+
+		chckbxPregunta = new JCheckBox("Pregunta");
+		chckbxPregunta.addItemListener(new ItemListener() {
+			public void itemStateChanged(ItemEvent e) {
+				if (chckbxPregunta.isSelected()) {
+					System.out.println("True");
+				} else {
+					System.out.println("False");
+				}
+			}
+		});
+		chckbxPregunta.setFont(new Font("Tahoma", Font.PLAIN, 20));
+		chckbxPregunta.setBounds(408, 108, 174, 21);
+		getContentPane().add(chckbxPregunta);
+		JRadioButton rdbtnMale = new JRadioButton("Male");
+		rdbtnMale.addItemListener(new ItemListener() {
+			public void itemStateChanged(ItemEvent e) {
+				if (e.getStateChange() == ItemEvent.DESELECTED) {
+					System.out.println("Male El deseleccionado");
+				}else if(e.getStateChange() == ItemEvent.SELECTED) {
+					System.out.println("Male El seleccionado");
+				}
+			}
+		});
+		buttonGroup.add(rdbtnMale);
+		rdbtnMale.setFont(new Font("Tahoma", Font.PLAIN, 15));
+		rdbtnMale.setBounds(408, 141, 103, 21);
+		getContentPane().add(rdbtnMale);
+		
+		JRadioButton rdbtnFemale = new JRadioButton("Female");
+		rdbtnFemale.addItemListener(new ItemListener() {
+			public void itemStateChanged(ItemEvent e) {
+				if (e.getStateChange() == ItemEvent.DESELECTED) {
+					System.out.println("Female El deseleccionado");
+				}else if(e.getStateChange() == ItemEvent.SELECTED) {
+					System.out.println("Female El seleccionado");
+				}
+			}
+		});
+		buttonGroup.add(rdbtnFemale);
+		rdbtnFemale.setFont(new Font("Tahoma", Font.PLAIN, 15));
+		rdbtnFemale.setBounds(408, 167, 103, 21);
+		getContentPane().add(rdbtnFemale);
+		
+		passwordField = new JPasswordField();
+		passwordField.setBounds(371, 20, 211, 26);
+		getContentPane().add(passwordField);
+		
+		JLabel lblPassword = new JLabel("Password:");
+		lblPassword.setFont(new Font("Tahoma", Font.PLAIN, 20));
+		lblPassword.setBounds(270, 20, 118, 25);
+		getContentPane().add(lblPassword);
+		
+		JSpinner spinner = new JSpinner();
+		spinner.setModel(new SpinnerNumberModel(1, 1, 100, 1));
+		spinner.setBounds(533, 167, 50, 25);
+		getContentPane().add(spinner);
+		
+		JScrollPane scrollPane_1 = new JScrollPane();
+		scrollPane_1.setBounds(28, 298, 360, 171);
+		getContentPane().add(scrollPane_1);
+		
+		JList list = new JList();
+		list.setFont(new Font("Tahoma", Font.PLAIN, 15));
+		list.setModel(new AbstractListModel() {
+			String[] values = new String[] {"1", "2", "3", "4", "5", "6", "7", "8", "9"};
+			public int getSize() {
+				return values.length;
+			}
+			public Object getElementAt(int index) {
+				return values[index];
+			}
+		});
+		scrollPane_1.setViewportView(list);
+
+		setVisible(true);
+
+	}
+}

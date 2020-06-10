@@ -1,0 +1,6 @@
+
+class coche {
+private int velocidad;
+coche () {velocidad=0;}
+}
+

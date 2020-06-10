@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class MediaWhile {
+public static void main(String[] args) {
+	Scanner in = new Scanner(System.in);
+	int value;
+	int contador = -1;
+	double suma = 0;
+	do {
+		System.out.println("Introduzca valores (0 para terminar)");
+		value = in.nextInt();
+		suma +=value;
+		contador++;
+	}while(value !=-1);
+	double media = (suma+1)/(contador); 
+	if (media = 0) {
+		System.out.printf("La media es 0");
+	}else {
+		System.out.printf("La media es %D", media);
+
+	}
+	
+}
+}
+ 

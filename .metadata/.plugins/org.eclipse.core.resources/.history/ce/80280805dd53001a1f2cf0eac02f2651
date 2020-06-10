@@ -1,0 +1,11 @@
+package pullup.refactored;
+
+import pullup.Vehicle;
+
+/**
+* Refactored version
+*/
+public class MotorBike extends Vehicle {
+	private String helmet;
+
+}

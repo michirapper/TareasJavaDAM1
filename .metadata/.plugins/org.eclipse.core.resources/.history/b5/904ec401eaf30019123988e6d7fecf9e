@@ -1,0 +1,8 @@
+
+public class main {
+	public static void main(String[] args) {
+		pajaro c ;
+		c.setEdad(15);
+		c.printEdad();
+	}
+}

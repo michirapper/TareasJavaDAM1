@@ -1,0 +1,16 @@
+
+public class Ejercicio3 {
+public static void main(String[] args) {
+	int value = 200;
+	int pares;
+	int impares;
+	for (int i = 100; i <= value; i++) {
+		if(value % 2) {
+			pares = i + pares;
+		}else if(value % 2) {
+			impares = impares + i;
+		}
+		 System.out.println(i);
+	}
+}
+}

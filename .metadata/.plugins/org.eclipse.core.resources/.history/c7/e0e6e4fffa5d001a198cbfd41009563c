@@ -1,0 +1,31 @@
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import java.awt.Font;
+
+public class test extends JFrame {
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		test window = new test();
+		
+	}
+
+	/**
+	 * Create the application.
+	 */
+	public test() {
+		setBounds(100, 100, 890, 516);
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		getContentPane().setLayout(null);
+		
+		JLabel lblNombre = new JLabel("Nombre:");
+		lblNombre.setFont(new Font("Tahoma", Font.PLAIN, 20));
+		lblNombre.setBounds(10, 20, 85, 25);
+		getContentPane().add(lblNombre);
+		setVisible(true);
+	}
+}

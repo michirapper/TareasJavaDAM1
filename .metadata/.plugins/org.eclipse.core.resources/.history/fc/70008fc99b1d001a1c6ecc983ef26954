@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class Ejercicio3 {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		boolean palindromo = false;
+		System.out.println("Frase:");
+		String frase = sc.nextLine();
+		String cadena = frase;
+		StringBuilder builder = new StringBuilder(cadena);
+		String sCadenaInvertida = builder.reverse().toString();
+		if(sCadenaInvertida == frase) {
+			palindromo = true
+		}else {
+			palindromo = false
+		}
+		System.out.println(sCadenaInvertida);
+	}
+}

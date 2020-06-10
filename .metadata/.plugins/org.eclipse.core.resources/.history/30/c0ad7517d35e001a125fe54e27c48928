@@ -1,0 +1,25 @@
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+
+public class Fromulario extends JFrame {
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+	Fromulario window = new Fromulario();
+	}}
+		}
+
+	/**
+	 * Create the application.
+	 */
+	public Fromulario() {
+		setBounds(100, 100, 450, 300);
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setVisible(true);
+	}
+}

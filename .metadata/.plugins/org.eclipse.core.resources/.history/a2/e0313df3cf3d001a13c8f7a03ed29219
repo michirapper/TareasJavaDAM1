@@ -1,0 +1,29 @@
+import java.util.HashSet;
+import java.util.Scanner;
+
+public class ParadojaCumpleanos {
+public static void main(String[] args) {
+	Scanner in = new Scanner(System.in);
+	while (in.hasNextLine()) {
+		String fechas = in.nextLine();
+		
+		String[] listaFechas = fechas.split(" ");
+		
+		HashSet<String> set = new HashSet<String>();
+		boolean repetidos = false;
+				
+		for (int i = 0; i < listaFechas.length; i++) {
+			if (set.contains(listaFechas[i])) 
+			{
+				repetidos = true;
+				break;
+			}
+			set.add(listaFechas[i]);
+		}
+		
+		System.out.println((repetidos)?"Hay cumpleaños repetidos":"No hay cumpleaños repetidos");
+		
+		
+	}
+}
+}

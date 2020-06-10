@@ -1,0 +1,6 @@
+package michirapper.Ejercicio2;
+
+public class Asalariado {
+private String nombre;
+private long dni;
+}

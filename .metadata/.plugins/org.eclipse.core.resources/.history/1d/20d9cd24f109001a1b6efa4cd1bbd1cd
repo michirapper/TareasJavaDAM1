@@ -1,0 +1,10 @@
+
+public class Ejercicio3 {
+public static void main(String[] args) {
+	value
+	for (int i = 200; i <= value; i++) {
+		 suma = i + suma;
+		 multiplicacion = multiplicacion*i;
+	}
+}
+}

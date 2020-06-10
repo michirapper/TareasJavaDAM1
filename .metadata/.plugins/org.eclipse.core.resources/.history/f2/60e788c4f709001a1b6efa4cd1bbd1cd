@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class Ejercicio5 {
+
+    public static void main(String[] args) {
+        int n = 0,mayor = -99999,menor = 99999;
+        Scanner in = new Scanner(System.in);
+		int n = in.nextInt();
+ 
+        for (int i = 0; i < 10; i++) {
+            if(n > mayor){
+                mayor = n;
+            }
+            if(n < menor){
+                menor = n;
+            }
+        }
+        System.out.println("El numero mayor es :" + mayor);
+        System.out.println("El numero menor es :" + menor);
+    }
+ 
+}

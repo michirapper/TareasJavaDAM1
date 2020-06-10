@@ -1,0 +1,31 @@
+import java.util.Scanner;
+//Miguel Angel Garre
+public class AceptaElRetoEjercicio168 {
+	public static void main(String[] args) {
+		Scanner numeros = new Scanner(System.in);
+		Scanner letras = new Scanner(System.in);
+		boolean continues = false;
+		while (!continues) {
+			int numeroNumeros = Integer.parseInt(numeros.nextLine());;
+			if (numeroNumeros == 0) {
+				continues = true;
+			} else {
+				String[] numerosArray = letras.nextLine().split(" ");
+
+				if (numerosArray.length == numeroNumeros - 1) {
+					for (int j = 1; j <= numeroNumeros; j++) {
+						int contador = 0;
+						for (int i = 0; i < numerosArray.length; i++) {
+							if (j != Integer.parseInt(numerosArray[i])) {
+								contador++;
+								if (contador == numerosArray.length) {
+									System.out.println(j);
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

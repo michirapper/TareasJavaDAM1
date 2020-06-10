@@ -1,0 +1,12 @@
+package conexion;
+
+public class sd {
+
+	public static void main(String[] args) {
+		byte num1 =1;
+		short num2 = 3;
+		num1 = num2;
+
+	}
+
+}
